@@ -3,6 +3,7 @@ const connectDB=require("./config/dbConnect");
 const app=express();
 const PORT=process.env.PORT || 5000
 const shorturl=require("./models/shortUrls");
+
 app.set("view engine","ejs");
 
 app.use(express.urlencoded({extended:false}));
